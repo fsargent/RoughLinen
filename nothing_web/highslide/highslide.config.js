@@ -27,6 +27,6 @@ hs.addSlideshow({
 // gallery config object
 var config1 = {
 	slideshowGroup: 'group1',
-	
+	numberPosition: 'caption',
 	transitions: ['expand', 'crossfade']
 };
