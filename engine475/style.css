@@ -1,0 +1,862 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic);
+.csslider475 {
+	display: inline-block;
+	position: relative;
+	
+	height: 710px;
+	width: 100%;
+	margin-top: 0px;
+}
+.csslider475 > .cs_anchor {
+	display: none;
+}
+.csslider475 > ul {
+	position: relative;
+	z-index: 1;
+	font-size: 0;
+	line-height: 0;
+	margin: 0 auto;
+	padding: 0;
+	height: 710px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.csslider475 > ul > li.img img {
+	width: 100%;
+}
+.csslider475 > ul > li.img {
+	font-size: 0pt;
+}
+.csslider475 > ul > li {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 15px;
+	font-size: initial;
+	line-height: normal;
+	white-space: normal;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.csslider475 .cs_lnk{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	font-size: 0pt;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.csslider475 > ul > li.img,
+.csslider475 > .cs_arrowprev,
+.csslider475 > .cs_arrownext,
+.csslider475 > .cs_bullets,
+.csslider475 > .cs_play_pause {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}.csslider475 > .cs_arrowprev,
+.csslider475 > .cs_arrownext {
+	position: absolute;
+	top: 50%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	z-index: 5;
+}
+.csslider475 > .cs_arrowprev > label,
+.csslider475 > .cs_arrownext > label {
+	position: absolute;
+
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0;
+	z-index: -1;
+}
+.csslider475 > .cs_arrowprev {
+	left: 0;
+}
+.csslider475 > .cs_arrownext {
+	right: 0;
+}
+
+.csslider475 > .slide:checked ~ .cs_arrowprev > label,
+.csslider475 > .slide:checked ~ .cs_arrownext > label {
+	opacity: 0;
+	z-index: -1;
+}
+
+
+
+.csslider475 > #cs_slide475_0:checked ~ .cs_arrowprev > label.num4,
+.csslider475 > #cs_pause475_0:checked ~ .cs_arrowprev > label.num4,
+.csslider475 > #cs_slide475_0:checked ~ .cs_arrownext > label.num1,
+.csslider475 > #cs_pause475_0:checked ~ .cs_arrownext > label.num1, 
+.csslider475 > #cs_slide475_1:checked ~ .cs_arrowprev > label.num0,
+.csslider475 > #cs_pause475_1:checked ~ .cs_arrowprev > label.num0,
+.csslider475 > #cs_slide475_1:checked ~ .cs_arrownext > label.num2,
+.csslider475 > #cs_pause475_1:checked ~ .cs_arrownext > label.num2, 
+.csslider475 > #cs_slide475_2:checked ~ .cs_arrowprev > label.num1,
+.csslider475 > #cs_pause475_2:checked ~ .cs_arrowprev > label.num1,
+.csslider475 > #cs_slide475_2:checked ~ .cs_arrownext > label.num3,
+.csslider475 > #cs_pause475_2:checked ~ .cs_arrownext > label.num3, 
+.csslider475 > #cs_slide475_3:checked ~ .cs_arrowprev > label.num2,
+.csslider475 > #cs_pause475_3:checked ~ .cs_arrowprev > label.num2,
+.csslider475 > #cs_slide475_3:checked ~ .cs_arrownext > label.num4,
+.csslider475 > #cs_pause475_3:checked ~ .cs_arrownext > label.num4, 
+.csslider475 > #cs_slide475_4:checked ~ .cs_arrowprev > label.num3,
+.csslider475 > #cs_pause475_4:checked ~ .cs_arrowprev > label.num3,
+.csslider475 > #cs_slide475_4:checked ~ .cs_arrownext > label.num0,
+.csslider475 > #cs_pause475_4:checked ~ .cs_arrownext > label.num0 {
+	opacity: 1;
+	z-index: 5;
+}
+
+/* calculate autoplay */
+@-webkit-keyframes arrow {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-moz-keyframes arrow {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-ms-keyframes arrow {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-o-keyframes arrow {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@keyframes arrow {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+
+
+.csslider475 > #cs_play475:checked ~ .cs_arrowprev > label.num4,
+.csslider475 > #cs_play475:checked ~ .cs_arrownext > label.num1 {
+	-webkit-animation: arrow 20000ms infinite -1500ms;
+	-moz-animation: arrow 20000ms infinite -1500ms;
+	-ms-animation: arrow 20000ms infinite -1500ms;
+	-o-animation: arrow 20000ms infinite -1500ms;
+	animation: arrow 20000ms infinite -1500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_arrowprev > label.num0,
+.csslider475 > #cs_play475:checked ~ .cs_arrownext > label.num2 {
+	-webkit-animation: arrow 20000ms infinite 2500ms;
+	-moz-animation: arrow 20000ms infinite 2500ms;
+	-ms-animation: arrow 20000ms infinite 2500ms;
+	-o-animation: arrow 20000ms infinite 2500ms;
+	animation: arrow 20000ms infinite 2500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_arrowprev > label.num1,
+.csslider475 > #cs_play475:checked ~ .cs_arrownext > label.num3 {
+	-webkit-animation: arrow 20000ms infinite 6500ms;
+	-moz-animation: arrow 20000ms infinite 6500ms;
+	-ms-animation: arrow 20000ms infinite 6500ms;
+	-o-animation: arrow 20000ms infinite 6500ms;
+	animation: arrow 20000ms infinite 6500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_arrowprev > label.num2,
+.csslider475 > #cs_play475:checked ~ .cs_arrownext > label.num4 {
+	-webkit-animation: arrow 20000ms infinite 10500ms;
+	-moz-animation: arrow 20000ms infinite 10500ms;
+	-ms-animation: arrow 20000ms infinite 10500ms;
+	-o-animation: arrow 20000ms infinite 10500ms;
+	animation: arrow 20000ms infinite 10500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_arrowprev > label.num3,
+.csslider475 > #cs_play475:checked ~ .cs_arrownext > label.num0 {
+	-webkit-animation: arrow 20000ms infinite 14500ms;
+	-moz-animation: arrow 20000ms infinite 14500ms;
+	-ms-animation: arrow 20000ms infinite 14500ms;
+	-o-animation: arrow 20000ms infinite 14500ms;
+	animation: arrow 20000ms infinite 14500ms;
+	
+}
+
+
+/* stop */
+.csslider475 > .slide:checked ~ .cs_arrowprev > label,
+.csslider475 > .slide:checked ~ .cs_arrownext > label,
+.csslider475 > .pause:checked ~ .cs_arrowprev > label,
+.csslider475 > .pause:checked ~ .cs_arrownext > label {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	-o-animation: none;
+	animation: none;
+}
+
+
+/* /calculate autoplay */
+.csslider475 > .cs_bullets {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 6;
+	font-size: 0;
+	line-height: 8pt;
+	text-align: center;
+}
+.csslider475 > .cs_bullets > div {
+	margin-left: -50%;
+	width: 100%;
+}
+.csslider475 > .cs_bullets > label {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.csslider475 > .cs_bullets > label > .cs_thumb {
+	visibility: hidden;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	line-height: 0;
+	left: -70px;
+	top: -71px;
+}
+.csslider475 > .cs_bullets > label > .cs_thumb > img {
+	max-width: none;
+}.csslider475 > .cs_play_pause {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+}
+.csslider475 > .cs_play_pause > label {
+	position: absolute;
+	cursor: pointer;
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause,
+.csslider475 > .slide:checked ~ .cs_play_pause > .cs_play,
+.csslider475 > .pause:checked ~ .cs_play_pause > .cs_play {
+	display: block;
+	z-index: 5;
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_play,
+.csslider475 > .slide:checked ~ .cs_play_pause > .cs_pause,
+.csslider475 > .pause:checked ~ .cs_play_pause > .cs_pause {
+	display: none;
+	z-index: -1;
+}
+
+
+/* calculate autoplay */
+@-webkit-keyframes pauseChange {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-moz-keyframes pauseChange {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-ms-keyframes pauseChange {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@-o-keyframes pauseChange {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+@keyframes pauseChange {
+	0%, 19.99% { opacity: 1; z-index: 5; }
+	20%, 100%	{ opacity: 0; z-index: -1; }
+}
+
+
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause.num0 {
+	opacity: 0;
+	z-index: -1;
+	-webkit-animation: pauseChange 20000ms infinite -1500ms;
+	-moz-animation: pauseChange 20000ms infinite -1500ms;
+	-ms-animation: pauseChange 20000ms infinite -1500ms;
+	-o-animation: pauseChange 20000ms infinite -1500ms;
+	animation: pauseChange 20000ms infinite -1500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause.num1 {
+	opacity: 0;
+	z-index: -1;
+	-webkit-animation: pauseChange 20000ms infinite 2500ms;
+	-moz-animation: pauseChange 20000ms infinite 2500ms;
+	-ms-animation: pauseChange 20000ms infinite 2500ms;
+	-o-animation: pauseChange 20000ms infinite 2500ms;
+	animation: pauseChange 20000ms infinite 2500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause.num2 {
+	opacity: 0;
+	z-index: -1;
+	-webkit-animation: pauseChange 20000ms infinite 6500ms;
+	-moz-animation: pauseChange 20000ms infinite 6500ms;
+	-ms-animation: pauseChange 20000ms infinite 6500ms;
+	-o-animation: pauseChange 20000ms infinite 6500ms;
+	animation: pauseChange 20000ms infinite 6500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause.num3 {
+	opacity: 0;
+	z-index: -1;
+	-webkit-animation: pauseChange 20000ms infinite 10500ms;
+	-moz-animation: pauseChange 20000ms infinite 10500ms;
+	-ms-animation: pauseChange 20000ms infinite 10500ms;
+	-o-animation: pauseChange 20000ms infinite 10500ms;
+	animation: pauseChange 20000ms infinite 10500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_play_pause > .cs_pause.num4 {
+	opacity: 0;
+	z-index: -1;
+	-webkit-animation: pauseChange 20000ms infinite 14500ms;
+	-moz-animation: pauseChange 20000ms infinite 14500ms;
+	-ms-animation: pauseChange 20000ms infinite 14500ms;
+	-o-animation: pauseChange 20000ms infinite 14500ms;
+	animation: pauseChange 20000ms infinite 14500ms;
+	
+}
+
+
+/* stop */
+.csslider475 > .slide:checked ~ .cs_play_pause > .cs_pause,
+.csslider475 > .pause:checked ~ .cs_play_pause > .cs_pause {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	-o-animation: none;
+	animation: none;
+}
+
+
+/* /calculate autoplay */
+.csslider475.cs_handle {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABwSURBVEjH7ZJBEsAgCAMT/v/n9NCOSqe2oD2yNx1JggB4BCEFWyFASP2KMQE7ywWhe/tTRGCGogLk02tFctiW/SUgaMyQG4PdPzDn31rQbMb8FiAXgvsEJNax1yVlVGAjA93apP3HFhZTGIqiKH7iADB6HxPlHdNVAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTA3VDEzOjQ5OjEwKzAyOjAwm7WiFAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0wN1QxMzo0OToxMCswMjowMOroGqgAAAAASUVORK5CYII="), move;
+}
+.csslider475.cs_handle.cs_grab {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABaSURBVEjH7ZMxCkAhDEOT8u9/5TpJ+xWkFse8IYutJgEB8RCHL1qCc90BEFnT6QH7mwgFHBUf8wJyS1TDLuc3vmighx37LZdIth3E5hKj9n6O0HRh+oJCiFcMxRUUDxR1CTMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDctMDdUMTM6NDk6MzgrMDI6MDDqf+sOAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA3LTA3VDEzOjQ5OjM4KzAyOjAwmyJTsgAAAABJRU5ErkJggg=="), move;
+}
+
+
+.csslider475 .cs_gestures {
+	visibility: hidden;
+	position: absolute;
+	font-size: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+	opacity: 0;
+
+	-webkit-transition: visibility .3s linear, opacity .3s linear;
+	-o-transition: visibility .3s linear, opacity .3s linear;
+	transition: visibility .3s linear, opacity .3s linear;
+}
+.csslider475 .cs_gestures.cs_show {
+	visibility: visible;
+	opacity: 1;
+}
+.csslider475 .cs_gestures.cs_show img {
+	width: 20%;
+}
+.csslider475 .cs_gestures.cs_show .cs_first_img {
+	position: absolute;
+	left: -20%;
+	top: 0;
+}
+.csslider475 .cs_gestures.cs_show .cs_last_img {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.csslider475 .cs_gestures > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500%;
+}
+.csslider475 > #cs_slide475_0:checked ~ ul > li.num0,
+.csslider475 > #cs_pause475_0:checked ~ ul > li.num0,
+.csslider475 > #cs_slide475_1:checked ~ ul > li.num1,
+.csslider475 > #cs_pause475_1:checked ~ ul > li.num1,
+.csslider475 > #cs_slide475_2:checked ~ ul > li.num2,
+.csslider475 > #cs_pause475_2:checked ~ ul > li.num2,
+.csslider475 > #cs_slide475_3:checked ~ ul > li.num3,
+.csslider475 > #cs_pause475_3:checked ~ ul > li.num3,
+.csslider475 > #cs_slide475_4:checked ~ ul > li.num4,
+.csslider475 > #cs_pause475_4:checked ~ ul > li.num4 {
+	opacity: 1;
+	z-index: 2;
+}
+
+.csslider475 > ul > li {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: 1;
+  
+  	-webkit-transition: opacity 1500ms ease;
+  	-moz-transition: opacity 1500ms ease;
+  	-ms-transition: opacity 1500ms ease;
+  	-o-transition: opacity 1500ms ease;
+  	transition: opacity 1500ms ease;
+  	
+
+	
+  	-webkit-transform: rotate(0deg);
+  	-moz-transform: rotate(0deg);
+  	-ms-transform: rotate(0deg);
+  	-o-transform: rotate(0deg);
+  	transform: rotate(0deg);
+  	
+}
+
+/* calculate autoplay */
+@-webkit-keyframes fade {
+	0%, 27.5%, 100%	{ opacity: 0; z-index: 2; }
+	7.5%, 20%	{ opacity: 1; z-index: 2; }
+}
+@-moz-keyframes fade {
+	0%, 27.5%, 100%	{ opacity: 0; z-index: 2; }
+	7.5%, 20%	{ opacity: 1; z-index: 2; }
+}
+@-ms-keyframes fade {
+	0%, 27.5%, 100%	{ opacity: 0; z-index: 2; }
+	7.5%, 20%	{ opacity: 1; z-index: 2; }
+}
+@-o-keyframes fade {
+	0%, 27.5%, 100%	{ opacity: 0; z-index: 2; }
+	7.5%, 20%	{ opacity: 1; z-index: 2; }
+}
+@keyframes fade {
+	0%, 27.5%, 100%	{ opacity: 0; z-index: 2; }
+	7.5%, 20%	{ opacity: 1; z-index: 2; }
+}
+
+
+.csslider475 > #cs_play475:checked ~ ul > li.num0 {
+	-webkit-animation: fade 20000ms infinite -1500ms;
+	-moz-animation: fade 20000ms infinite -1500ms;
+	-ms-animation: fade 20000ms infinite -1500ms;
+	-o-animation: fade 20000ms infinite -1500ms;
+	animation: fade 20000ms infinite -1500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ ul > li.num1 {
+	-webkit-animation: fade 20000ms infinite 2500ms;
+	-moz-animation: fade 20000ms infinite 2500ms;
+	-ms-animation: fade 20000ms infinite 2500ms;
+	-o-animation: fade 20000ms infinite 2500ms;
+	animation: fade 20000ms infinite 2500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ ul > li.num2 {
+	-webkit-animation: fade 20000ms infinite 6500ms;
+	-moz-animation: fade 20000ms infinite 6500ms;
+	-ms-animation: fade 20000ms infinite 6500ms;
+	-o-animation: fade 20000ms infinite 6500ms;
+	animation: fade 20000ms infinite 6500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ ul > li.num3 {
+	-webkit-animation: fade 20000ms infinite 10500ms;
+	-moz-animation: fade 20000ms infinite 10500ms;
+	-ms-animation: fade 20000ms infinite 10500ms;
+	-o-animation: fade 20000ms infinite 10500ms;
+	animation: fade 20000ms infinite 10500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ ul > li.num4 {
+	-webkit-animation: fade 20000ms infinite 14500ms;
+	-moz-animation: fade 20000ms infinite 14500ms;
+	-ms-animation: fade 20000ms infinite 14500ms;
+	-o-animation: fade 20000ms infinite 14500ms;
+	animation: fade 20000ms infinite 14500ms;
+	
+}
+
+
+
+.csslider475 > #cs_play475:checked ~ ul > li,
+.csslider475 > .pause:checked ~ ul > li {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+	
+}
+
+
+/* /calculate autoplay */
+
+.csslider475 > .cs_arrowprev {
+  	-webkit-transition: .4s all 0s ease;
+  	-moz-transition: .4s all 0s ease;
+  	-ms-transition: .4s all 0s ease;
+  	-o-transition: .4s all 0s ease;
+  	transition: .4s all 0s ease;
+  	
+	-webkit-transform: translateX(350px);
+	-moz-transform: translateX(350px);
+	-ms-transform: translateX(350px);
+	-o-transform: translateX(350px);
+	transform: translateX(350px);
+	
+}
+.csslider475 > .cs_arrownext {
+  	-webkit-transition: .4s all .15s ease;
+  	-moz-transition: .4s all .15s ease;
+  	-ms-transition: .4s all .15s ease;
+  	-o-transition: .4s all .15s ease;
+  	transition: .4s all .15s ease;
+  	
+	-webkit-transform: translateX(-350px);
+	-moz-transform: translateX(-350px);
+	-ms-transform: translateX(-350px);
+	-o-transform: translateX(-350px);
+	transform: translateX(-350px);
+	
+}
+.csslider475 > .cs_play_pause {
+  	-webkit-transition: .4s all .3s ease;
+  	-moz-transition: .4s all .3s ease;
+  	-ms-transition: .4s all .3s ease;
+  	-o-transition: .4s all .3s ease;
+  	transition: .4s all .3s ease;
+  	
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	transform: scale(0.2);
+	
+}
+.csslider475 > .cs_arrowprev,
+.csslider475 > .cs_arrownext,
+.csslider475 > .cs_play_pause {
+	opacity: 0;
+}
+
+.csslider475:hover > .cs_arrowprev,
+.csslider475:hover > .cs_arrownext,
+.csslider475:hover > .cs_play_pause {
+	opacity: 1;
+	-webkit-transform: translateX(0) translateY(0) scale(1);
+	-moz-transform: translateX(0) translateY(0) scale(1);
+	-ms-transform: translateX(0) translateY(0) scale(1);
+	-o-transform: translateX(0) translateY(0) scale(1);
+	transform: translateX(0) translateY(0) scale(1);
+	
+}.csslider475 > .cs_arrowprev > label,
+.csslider475 > .cs_arrownext > label {
+	margin-top: -20px;
+	margin-left: -20px;
+	height: 40px;
+	width: 40px;
+
+	border-style: solid;
+	border-color: #ffffff;
+	-webkit-transition: -webkit-transform 0.2s ease;
+	-moz-transition: -moz-transform 0.2s ease;
+	-ms-transition: -ms-transform 0.2s ease;
+	-o-transition: -o-transform 0.2s ease;
+	transition: transform 0.2s ease;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+}
+.csslider475 > .cs_arrowprev > label {
+	border-width: 0 0 1px 1px;
+}
+.csslider475 > .cs_arrownext > label {
+	border-width: 1px 1px 0 0;
+}
+.csslider475 > .cs_arrowprev {
+	top: 50%;
+	left: 20px;
+	margin-left: 20px;
+}
+.csslider475 > .cs_arrownext {
+	top: 50%;
+	margin-right: 20px;
+	right: 20px;
+}
+.csslider475 > .cs_arrownext > label:hover,
+.csslider475 > .cs_arrowprev > label:hover {
+	-webkit-transform: scale(1.1) rotate(45deg);
+	-moz-transform: scale(1.1) rotate(45deg);
+	-ms-transform: scale(1.1) rotate(45deg);
+	-o-transform: scale(1.1) rotate(45deg);
+	transform: scale(1.1) rotate(45deg);
+	
+}
+.csslider475 > .cs_play_pause > label{
+	text-decoration: none;
+	margin-top: -15px;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	-o-transition: -o-transform 0.2s;
+	transition: transform 0.2s;
+}
+.csslider475 > .cs_play_pause > .cs_play {
+	margin-left: -12px;
+	width: 30px;
+	height: 30px;
+	border-style:solid;
+	border-width:1px 1px 0 0;
+	border-color: #ffffff;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+.csslider475 > .cs_play_pause > .cs_play:after {
+	content: '';
+	position: absolute;
+	width: 54px;
+	height: 54px;
+
+	left:-25%;
+	top:-60%;
+
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.csslider475 > .cs_play_pause > .cs_play span {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -50%;
+	-webkit-transform: rotate(45deg) scale(1.43) translate(7px, 7px);
+	-moz-transform: rotate(45deg) scale(1.43) translate(7px, 7px);
+	-o-transform: rotate(45deg) scale(1.43) translate(7px, 7px);
+	transform: rotate(45deg) scale(1.43) translate(7px, 7px);
+}
+.csslider475 > .cs_play_pause > .cs_pause {
+	width: 10px;
+	height: 40px;	
+	margin-left: 5px;
+	border-style:solid;
+	border-width:0 1px;
+	border-color: #ffffff;
+}
+.csslider475 > .cs_play_pause > .cs_play:hover {
+	-webkit-transform:scale(1.1) rotate(45deg);
+	-moz-transform:scale(1.1) rotate(45deg);
+	-o-transform:scale(1.1) rotate(45deg);
+	transform:scale(1.1) rotate(45deg);
+}
+.csslider475 > .cs_play_pause > .cs_pause:hover {
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	transform:scale(1.1);
+}
+.csslider475 > .cs_bullets {
+	bottom: 5px;
+	margin-bottom: 5px;
+}
+.csslider475 > .cs_bullets > label {
+	width:40px;
+	height:8px;
+	background: none;
+	border: 1px solid #ffffff;
+	position:relative;
+	margin-left:8px;
+	margin-top: 5px;
+	color:transparent;
+}
+
+.csslider475 > .cs_bullets > label > .cs_thumb {
+	border: 1px solid #ffffff;
+	margin-left: 15px;
+	margin-top: -10px;
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	
+}
+.csslider475 > .cs_bullets > label:hover > .cs_thumb {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+.csslider475 > .cs_bullets > label > .cs_point {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	right: -2px;
+	bottom: -2px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+.csslider475 > #cs_slide475_0:checked ~ .cs_bullets > label.num0 > .cs_point,
+.csslider475 > #cs_pause475_0:checked ~ .cs_bullets > label.num0 > .cs_point,
+.csslider475 > #cs_slide475_1:checked ~ .cs_bullets > label.num1 > .cs_point,
+.csslider475 > #cs_pause475_1:checked ~ .cs_bullets > label.num1 > .cs_point,
+.csslider475 > #cs_slide475_2:checked ~ .cs_bullets > label.num2 > .cs_point,
+.csslider475 > #cs_pause475_2:checked ~ .cs_bullets > label.num2 > .cs_point,
+.csslider475 > #cs_slide475_3:checked ~ .cs_bullets > label.num3 > .cs_point,
+.csslider475 > #cs_pause475_3:checked ~ .cs_bullets > label.num3 > .cs_point,
+.csslider475 > #cs_slide475_4:checked ~ .cs_bullets > label.num4 > .cs_point,
+.csslider475 > #cs_pause475_4:checked ~ .cs_bullets > label.num4 > .cs_point {
+	border-color: #ffffff;
+}
+
+/* calculate autoplay */
+@-webkit-keyframes bullet {
+	0%, 19.99%	{ border-color: #ffffff; }
+	20%, 100% { border-color: transparent; }
+}
+@-moz-keyframes bullet {
+	0%, 19.99%	{ border-color: #ffffff; }
+	20%, 100% { border-color: transparent; }
+}
+@-ms-keyframes bullet {
+	0%, 19.99%	{ border-color: #ffffff; }
+	20%, 100% { border-color: transparent; }
+}
+@-o-keyframes bullet {
+	0%, 19.99%	{ border-color: #ffffff; }
+	20%, 100% { border-color: transparent; }
+}
+@keyframes bullet {
+	0%, 19.99%	{ border-color: #ffffff; }
+	20%, 100% { border-color: transparent; }
+}
+
+
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label.num0 > .cs_point {
+	-webkit-animation: bullet 20000ms infinite -1500ms;
+	-moz-animation: bullet 20000ms infinite -1500ms;
+	-ms-animation: bullet 20000ms infinite -1500ms;
+	-o-animation: bullet 20000ms infinite -1500ms;
+	animation: bullet 20000ms infinite -1500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label.num1 > .cs_point {
+	-webkit-animation: bullet 20000ms infinite 2500ms;
+	-moz-animation: bullet 20000ms infinite 2500ms;
+	-ms-animation: bullet 20000ms infinite 2500ms;
+	-o-animation: bullet 20000ms infinite 2500ms;
+	animation: bullet 20000ms infinite 2500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label.num2 > .cs_point {
+	-webkit-animation: bullet 20000ms infinite 6500ms;
+	-moz-animation: bullet 20000ms infinite 6500ms;
+	-ms-animation: bullet 20000ms infinite 6500ms;
+	-o-animation: bullet 20000ms infinite 6500ms;
+	animation: bullet 20000ms infinite 6500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label.num3 > .cs_point {
+	-webkit-animation: bullet 20000ms infinite 10500ms;
+	-moz-animation: bullet 20000ms infinite 10500ms;
+	-ms-animation: bullet 20000ms infinite 10500ms;
+	-o-animation: bullet 20000ms infinite 10500ms;
+	animation: bullet 20000ms infinite 10500ms;
+	
+}
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label.num4 > .cs_point {
+	-webkit-animation: bullet 20000ms infinite 14500ms;
+	-moz-animation: bullet 20000ms infinite 14500ms;
+	-ms-animation: bullet 20000ms infinite 14500ms;
+	-o-animation: bullet 20000ms infinite 14500ms;
+	animation: bullet 20000ms infinite 14500ms;
+	
+}
+
+
+
+
+.csslider475 > #cs_play475:checked ~ .cs_bullets > label > .cs_point,
+.csslider475 > .pause:checked ~ .cs_bullets > label > .cs_point {
+  	-webkit-transition: none;
+  	-moz-transition: none;
+  	-ms-transition: none;
+  	-o-transition: none;
+  	transition: none;
+  	
+}
+
+/* stop */
+
+.csslider475 > .slide:checked ~ .cs_bullets > label > .cs_point,
+.csslider475 > .pause:checked ~ .cs_bullets > label > .cs_point {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	-o-animation: none;
+	animation: none;
+}
+
+/* /calculate autoplay */
+/* hide description & bullets on mobile devices */
+@media
+only screen and (max-width: 480px),
+only screen and (-webkit-max-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (   max--moz-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (     -o-max-device-pixel-ratio: 2/1)    and (max-width: 480px),
+only screen and (        max-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (                max-resolution: 192dpi) and (max-width: 480px),
+only screen and (                max-resolution: 2dppx)  and (max-width: 480px) { 
+	.csslider475 > .cs_description,
+	.csslider475 > .cs_bullets {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.csslider475,
+	.csslider475 > ul {
+		height: auto;
+	}
+}
