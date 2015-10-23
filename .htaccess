@@ -54,3 +54,4 @@ Redirect 301 /ork_duvet_solo.html https://roughlinen.com/rough-linen-orkney-duve
 Redirect 301 /smooth_duvet_solo.html  https://roughlinen.com/rough-linen-smooth-duvet-cover.html
 Redirect 301 /st_barts_duvet_solo.html  https://roughlinen.com/rough-linen-st-barts-duvet-cover.html
 Redirect 301 /nothing_web/nothing_for_sale.html https://roughlinen.com/nothing_web/rough-linen-nothing-for-sale.html
+ErrorDocument 404 /404.html
