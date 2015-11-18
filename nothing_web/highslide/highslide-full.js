@@ -1648,7 +1648,7 @@ writeExtendedContent : function () {
 				' onload="if (hs.expanders['+ this.key +']) hs.expanders['+ this.key +'].contentLoaded()" ' : '';
 		this.body.innerHTML += '<iframe name="hs'+ (new Date()).getTime() +'" frameborder="0" key="'+ this.key +'" '
 			+' style="width:'+ this.objectWidth +'px; height:'+ h +'px" '
-			+ onload +' src="'+ this.src +'" ></iframe>';
+			+ onload +' src="images/'+ this.src +'" ></iframe>';
 		this.ruler = this.body.getElementsByTagName('div')[0];
 		this.iframe = this.body.getElementsByTagName('iframe')[0];
 		
