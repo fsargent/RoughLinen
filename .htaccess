@@ -1,3 +1,6 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://roughlinen.com/$1 [L,R=301]
 Redirect 301 /shop_by_product.html  https://roughlinen.com/rough-linen-products.html
 Redirect 301 /bath_towel_menu.html  https://roughlinen.com/rough-linen-bathe.html
 Redirect 301 /curtains_menu_new.html  https://roughlinen.com/rough-linen-shade.html
