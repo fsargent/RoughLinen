@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    {% include head.html %}
+    <style type="text/css">
+    #community-member {}
+    
+    #footer-block {
+        position: absolute;
+        top: 1000px;
+    }
+    </style>
+</head>
+
+<body>
+    {% include header.html %}
+    <div class="page-content">
+        <div id="wrapper">
+            {{ content }}
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
