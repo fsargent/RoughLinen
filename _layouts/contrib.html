@@ -2,23 +2,22 @@
 <html>
 
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     {% include head.html %}
-    <style type="text/css">		
-    #community-member {}		
-    		
-    #footer-block {		
-        position: absolute;		
-        top: 1000px;		
-    }		
+    <style type="text/css">
+    #community-member {}
+
+    #footer-block {
+        position: absolute;
+        top: 1000px;
+    }
     </style>
 </head>
 
 <body>
     {% include header.html %}
     <div class="page-content">
-      <div id="wrapper">		
-        {{ content }}
+        <div class="container"
+            {{ content }}
       </div>
     </div>
     {% include footer.html %}
