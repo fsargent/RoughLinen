@@ -12,7 +12,8 @@ layout: default
     left: 181px;
 }
 
-#story_play {
+
+/*#story_play {
     position: absolute;
     top: 5px;
     height: 200px;
@@ -25,6 +26,7 @@ layout: default
     height: 230px;
     width: 162px;
 }
+*/
 
 #logo-home {
     margin-left: auto;
@@ -74,26 +76,26 @@ layout: default
     </ul>
     <a class="cs_lnk" href="http://cssslider.com">html5 slideshow</a>
     <div class='cs_play_pause'>
-        <label class='cs_play' for='cs_play475'><span><i></i></span></label>
-        <label class='cs_pause num0' for='cs_pause475_0'><span><i></i></span></label>
-        <label class='cs_pause num1' for='cs_pause475_1'><span><i></i></span></label>
-        <label class='cs_pause num2' for='cs_pause475_2'><span><i></i></span></label>
-        <label class='cs_pause num3' for='cs_pause475_3'><span><i></i></span></label>
-        <label class='cs_pause num4' for='cs_pause475_4'><span><i></i></span></label>
+        <label class='cs_play' for='cs_play475'></label>
+        <label class='cs_pause num0' for='cs_pause475_0'></label>
+        <label class='cs_pause num1' for='cs_pause475_1'></label>
+        <label class='cs_pause num2' for='cs_pause475_2'></label>
+        <label class='cs_pause num3' for='cs_pause475_3'></label>
+        <label class='cs_pause num4' for='cs_pause475_4'></label>
     </div>
     <div class='cs_arrowprev'>
-        <label class='num0' for='cs_slide475_0'><span><i></i></span></label>
-        <label class='num1' for='cs_slide475_1'><span><i></i></span></label>
-        <label class='num2' for='cs_slide475_2'><span><i></i></span></label>
-        <label class='num3' for='cs_slide475_3'><span><i></i></span></label>
-        <label class='num4' for='cs_slide475_4'><span><i></i></span></label>
+        <label class='num0' for='cs_slide475_0'></label>
+        <label class='num1' for='cs_slide475_1'></label>
+        <label class='num2' for='cs_slide475_2'></label>
+        <label class='num3' for='cs_slide475_3'></label>
+        <label class='num4' for='cs_slide475_4'></label>
     </div>
     <div class='cs_arrownext'>
-        <label class='num0' for='cs_slide475_0'><span><i></i></span></label>
-        <label class='num1' for='cs_slide475_1'><span><i></i></span></label>
-        <label class='num2' for='cs_slide475_2'><span><i></i></span></label>
-        <label class='num3' for='cs_slide475_3'><span><i></i></span></label>
-        <label class='num4' for='cs_slide475_4'><span><i></i></span></label>
+        <label class='num0' for='cs_slide475_0'></label>
+        <label class='num1' for='cs_slide475_1'></label>
+        <label class='num2' for='cs_slide475_2'></label>
+        <label class='num3' for='cs_slide475_3'></label>
+        <label class='num4' for='cs_slide475_4'></label>
     </div>
     <div class='cs_bullets'>
         <label class='num0' for='cs_slide475_0'>
@@ -119,21 +121,45 @@ layout: default
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-md-2 col-sm-12 col-xs-12">
-            <a class="highslide" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 900, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" href="https://www.youtube.com/embed/rXpVABq5qfI?rel=0&amp;wmode=transparent&amp;autoplay=1" title="The Rough Linen Story"><img src="images/rl-story-162.jpg" alt="Tricia talks about the origins of Rough Linen" width="162" height="185" id="story_play" title="Tricia talks about the origins of Rough Linen" /></a>
-            <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/brown-buttons-1200.jpg" title="Shop for: &lt;a href=&quot;rough-linen-duvet-cover.html&quot;&gt;Rough Linen&#2122; duvet cover&lt;/a&gt;"><img src="images/Orkney_Natural_Linen_CU_200.jpg" alt="Rough Linen Orkney natural linen duvet cover" id="orkney_CU" title="Rough Linen Orkney natural linen duvet cover" /></a>
+    <div class="col-md-2 hidden-sm hidden-xs">
+        <div class="row">
+            <a class="highslide" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 900, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" href="https://www.youtube.com/embed/rXpVABq5qfI?rel=0&amp;wmode=transparent&amp;autoplay=1" title="The Rough Linen Story">
+                <img class="img-responsive" src="images/rl-story-162.jpg" alt="Tricia talks about the origins of Rough Linen" id="story_play" title="Tricia talks about the origins of Rough Linen" />
+            </a>
         </div>
-        <div id="rough-linen-story" class="col-md-5 col-sm-12 col-xs-12">
-            <p>My name is Tricia Rose. I have always wanted to recreate the homespun linens from my grandmother’s house in Scotland and vintage textiles I found in France. It took years of searching to discover the traditionally woven coarse linen fabric I use in my Orkney range of bedding.</p>
-            <p>At first I made it just for me. I took a photo of my duvet cover and driftwood headboard, sent it to a homemaker’s blog and it went viral. Influential blogs picked it up, Google found my site and suddenly I had a business.</p>
-            <p>My bedding ranges from Smooth white linen sheets, woven to my specification, simply finished and generously sized, to Orkney covers, earthy and fundamental. Both capture the elemental spirit of linen, its luxury and strength.</p>
-            <p>I also have curtain panels, table linens and towels, made in a small workroom in Marin County, the old way—cut to the grain and sewn with short stitches, deep hems and mitered corners—in both Smooth and Orkney linen. Pinafores are a runaway success – try one!</p>
-            <p>There is lots more information on the website, and you can join my <a href="rough-linen-sample-card.html">newsletter</a> to receive samples of Rough Linen™ textures and colors. Keep in touch.</p>
-            <p><img id="signature" src="images/tricia_sig.gif" alt="Tricia" /></p>
+        <div class="row">
+            <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/brown-buttons-1200.jpg" title="Shop for: &lt;a href=&quot;rough-linen-duvet-cover.html&quot;&gt;Rough Linen&#2122; duvet cover&lt;/a&gt;">
+                <img class="img-responsive" src="images/Orkney_Natural_Linen_CU_200.jpg" alt="Rough Linen Orkney natural linen duvet cover" id="orkney_CU" title="Rough Linen Orkney natural linen duvet cover" />
+            </a>
         </div>
-    <div class="col-md-5 col-sm-12 col-xs-12">
-        <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/grannie_bag_1200.jpg" title="My grandmother's great grandmother's linen bag from 1840"><img class="img-responsive" src="images/grannie_bag_400.jpg" alt="My grandmother's great grandmother's linen bag from 1840" id="grannie_bag" title="My grandmother's great grandmother's linen bag from 1840" /></a>
     </div>
+    <div id="rough-linen-story" class="col-md-5 col-sm-6 col-xs-12">
+        <p>My name is Tricia Rose. I have always wanted to recreate the homespun linens from my grandmother’s house in Scotland and vintage textiles I found in France. It took years of searching to discover the traditionally woven coarse linen fabric I use in my Orkney range of bedding.</p>
+        <p>At first I made it just for me. I took a photo of my duvet cover and driftwood headboard, sent it to a homemaker’s blog and it went viral. Influential blogs picked it up, Google found my site and suddenly I had a business.</p>
+        <p>My bedding ranges from Smooth white linen sheets, woven to my specification, simply finished and generously sized, to Orkney covers, earthy and fundamental. Both capture the elemental spirit of linen, its luxury and strength.</p>
+        <p>I also have curtain panels, table linens and towels, made in a small workroom in Marin County, the old way—cut to the grain and sewn with short stitches, deep hems and mitered corners—in both Smooth and Orkney linen. Pinafores are a runaway success – try one!</p>
+        <p>There is lots more information on the website, and you can join my <a href="rough-linen-sample-card.html">newsletter</a> to receive samples of Rough Linen™ textures and colors. Keep in touch.</p>
+        <p><img id="signature" src="images/tricia_sig.gif" alt="Tricia" /></p>
+    </div>
+    <div class="col-md-5 hidden-sm hidden-xs">
+        <div class="row">
+            <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/grannie_bag_1200.jpg" title="My grandmother's great grandmother's linen bag from 1840">
+            <img class="center-block img-responsive" src="images/grannie_bag_400.jpg" alt="My grandmother's great grandmother's linen bag from 1840" id="grannie_bag" title="My grandmother's great grandmother's linen bag from 1840" /></a>
+        </div>
+    </div>
+    <div class="col-md-5 col-sm-6 hidden-md hidden-lg">
+        <div class="row">
+            <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/grannie_bag_1200.jpg" title="My grandmother's great grandmother's linen bag from 1840"><img class="img-responsive" src="images/grannie_bag_400.jpg" alt="My grandmother's great grandmother's linen bag from 1840" id="grannie_bag" title="My grandmother's great grandmother's linen bag from 1840" /></a>
+        </div>
+        <div class="row">
+            <a class="highslide" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 900, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" href="https://www.youtube.com/embed/rXpVABq5qfI?rel=0&amp;wmode=transparent&amp;autoplay=1" title="The Rough Linen Story">
+                <img class="center-block img-responsive" src="images/rl-story-162.jpg" alt="Tricia talks about the origins of Rough Linen" id="story_play" title="Tricia talks about the origins of Rough Linen" />
+            </a>
+        </div>
+        <div class="row">
+            <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/brown-buttons-1200.jpg" title="Shop for: &lt;a href=&quot;rough-linen-duvet-cover.html&quot;&gt;Rough Linen&#2122; duvet cover&lt;/a&gt;">
+                <img class="center-block img-responsive" src="images/Orkney_Natural_Linen_CU_200.jpg" alt="Rough Linen Orkney natural linen duvet cover" id="orkney_CU" title="Rough Linen Orkney natural linen duvet cover" />
+            </a>
+        </div>
     </div>
 </div>
