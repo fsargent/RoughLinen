@@ -54,13 +54,11 @@
 #product {
     height: 100%;
     line-height: 25px;
-    min-height: 698px;
     margin-bottom: 20px;
 }
 .product {
     height: 100%;
     line-height: 25px;
-    min-height: 750px;
     margin-bottom: 20px;
 }
 #description {
@@ -208,7 +206,6 @@ h3 {
     color: #fff;
     text-align: center;
     background-color: #AB967D;
-    width: 180px;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
