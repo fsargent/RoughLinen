@@ -5,6 +5,18 @@
 @media only screen and (max-width: 1000px) {
     #product-main {} .product-main {}
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
 #wrapper {
     color: #333;
     font-family: Verdana, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans Regular", "Helvetica Neue", Arial, sans-serif;
@@ -42,13 +54,11 @@
 #product {
     height: 100%;
     line-height: 25px;
-    min-height: 698px;
     margin-bottom: 20px;
 }
 .product {
     height: 100%;
     line-height: 25px;
-    min-height: 750px;
     margin-bottom: 20px;
 }
 #description {
@@ -196,7 +206,6 @@ h3 {
     color: #fff;
     text-align: center;
     background-color: #AB967D;
-    width: 180px;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -384,7 +393,7 @@ p a:active {
 }
 /**********************************/
 
-#navMenu {
+.navMenu {
     background-color: #F0F9FB;
     box-shadow: 1px 1px 4px #AAAAAA;
     -webkit-box-shadow: 1px 1px 4px #AAAAAA;
@@ -396,26 +405,25 @@ p a:active {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    overflow: visable;
     text-transform: capitalize;
-    width: 1000px;
+    width: 100%;
 }
-#navMenu ul {
+.navMenu ul {
     line-height: 45px;
     margin: 0;
     padding: 0;
     z-index: 1000;
 }
-#navMenu li {
+.navMenu li {
     background-color: #F0F9FB;
     float: left;
     list-style: none;
     position: relative;
 }
-#navMenu li:hover {
+.navMenu li:hover {
     background-color: #F0F9FB;
 }
-#navMenu ul li a {
+.navMenu ul li a {
     border: 1px solid #F0F9FB;
     display: block;
     height: 45px;
@@ -424,7 +432,7 @@ p a:active {
     text-align: center;
     text-decoration: none;
 }
-#navMenu ul li a:hover {
+.navMenu ul li a:hover {
     background-color: #F0F9FB;
     border: 1px solid #F0F9FB;
     border-radius: 3px;
@@ -434,14 +442,14 @@ p a:active {
     text-decoration: underline;
     width: auto;
 }
-#navMenu ul li ul li a {
+.navMenu ul li ul li a {
     height: 45px;
     line-height: 45px;
     padding-right: 0px;
     padding-left: 0px;
     width: 140px;
 }
-#navMenu ul li ul li a:hover {
+.navMenu ul li ul li a:hover {
     height: 45px;
     line-height: 45px;
     padding-right: 0px;
@@ -449,20 +457,20 @@ p a:active {
     text-decoration: underline;
     width: 140px;
 }
-#navMenu ul ul {
+.navMenu ul ul {
     box-shadow: 1px 2px 5px #AAAAAA;
     -webkit-box-shadow: 1px 2px 5px #AAAAAA;
     position: absolute;
     visibility: hidden;
     top: 47px;
 }
-#navMenu ul li:hover ul {
+.navMenu ul li:hover ul {
     padding-right: 0px;
     padding-left: 0px;
     visibility: visible;
     width: 140px;
 }
-#navMenu ul li:hover ul li a:hover {
+.navMenu ul li:hover ul li a:hover {
     background-color: #F0F9FB;
     color: #000;
     padding-right: 0px;
@@ -470,7 +478,7 @@ p a:active {
     text-decoration: underline;
     width: 140px;
 }
-#navMenu a.thispage {
+.navMenu a.thispage {
     color: #000;
     display: block;
     height: 45px;
