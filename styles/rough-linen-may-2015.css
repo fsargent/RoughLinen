@@ -317,25 +317,21 @@ h3 {
 }
 /******************************/
 
+/* TODO: This is horrible */
 div {
     margin-bottom: 15px;
 }
+
 a {
     color: inherit;
 }
 a+p {
     padding-left: 5px;
 }
-img+p {
+img + p {
     padding-left: 5px;
     text-decoration: none;
     margin-bottom: 20px;
-}
-p {
-    margin: 0px;
-    line-height: 25px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
 }
 p a:link {
     color: #996633;
@@ -392,6 +388,11 @@ p a:active {
     width: 100%;
 }
 /**********************************/
+
+.site-footer p {
+    margin: 0px;
+    line-height: 25px;
+}
 
 .navMenu {
     background-color: #F0F9FB;
