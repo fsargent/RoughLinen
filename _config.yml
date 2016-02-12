@@ -11,3 +11,5 @@ github_username:  fsargent
 markdown: kramdown
 include: [.htaccess]
 detatch: true
+gems:
+  - jekyll-sitemap
