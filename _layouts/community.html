@@ -9,48 +9,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-md-push-5">
-                    <span><a href="../{{page.previous}}/{{page.previous}}.html"><img src="/images/arrow-for-community-left.jpg" alt="Left" height="42" width="42" border="0" /></a></span>
+                    <span><a href="{{page.next.url}}"><img src="/images/arrow-for-community-left.jpg" alt="Next Contributor" height="42" width="42" border="0" /></a></span>
                     <span style="margin-left: 33%" class="center"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">{{ page.contributor }}</font></span>
-                    <span class="pull-right"><a href="../{{page.next}}/{{page.next}}.html"><img src="/images/arrow-for-community-right.jpg" alt="Right" height="42" width="42" border="0" /></a></span>
+                    <span class="pull-right"><a href="{{page.previous.url}}"><img src="/images/arrow-for-community-right.jpg" alt="Previous Contributor" height="42" width="42" border="0" /></a></span>
                 </div>
             </div>
             <div class="row">
                 <div id="community_large_photo" class="col-md-5">
                     <a href="{{ page.image_00 }}" class="highslide" onclick="return hs.expand(this, config1 )">
-                        <img src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_00 }}?w=400&amp;fit=crop&amp;ch=Width,DPR" alt="Big Image" class="img-responsive" border="0" />
+                        <img src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_00 }}?w=400&amp;fit=crop&amp;ch=Width,DPR" alt="Big Image" class="img-responsive" border="0" />
                     </a>
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <div class="row ">
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_01 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_01 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 1" /></a>
+                            <a href="{{ page.image_01 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_01 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 1" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_02 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_02 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 2" /></a>
+                            <a href="{{ page.image_02 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_02 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 2" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_03 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_03 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 3" /></a>
+                            <a href="{{ page.image_03 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_03 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 3" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_04 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_04 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 4" /></a>
+                            <a href="{{ page.image_04 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_04 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 4" /></a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_05 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_05 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 5" border="0" /></a>
+                            <a href="{{ page.image_05 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_05 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 5" border="0" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_06 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_06 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 6" border="0" /></a>
+                            <a href="{{ page.image_06 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_06 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 6" border="0" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_07 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_07 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 7" border="0" /></a>
+                            <a href="{{ page.image_07 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_07 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 7" border="0" /></a>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="{{ page.image_08 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.path | replace: '.html' | split: "/" | last }}/{{ page.image_08 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 8" border="0" /></a>
+                            <a href="{{ page.image_08 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/contrib/{{ page.slug }}/{{ page.image_08 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 8" border="0" /></a>
                         </div>
                     </div>
                     <div>
-                        {{ content }}
+                        {{ page.content }}
                     </div>
                 </div>
             </div>
