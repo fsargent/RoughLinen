@@ -3,9 +3,13 @@ title: Rough Linen
 email: felix@roughlinen.com
 description: > # Rough Linen - real, natural linen, the way it used to be
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://roughlinen.com" # the base hostname & protocol for your site
+url: "https://roughlinen.com" # the base hostname & protocol for your site
 twitter_username: roughlinen
 github_username:  fsargent
+
+collections:
+  contrib:
+    output: true
 
 # Build settings
 markdown: kramdown

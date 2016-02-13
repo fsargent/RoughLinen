@@ -12,8 +12,14 @@ text-decoration: none;
 }
 </style>
 <div id="main">
-    <h1>meet our community</h1>
+    <h1>meet our community </h1>
     <div id="communityTable">
+
+     {% for community in site.contrib %}
+     <a class="community-tile" href="{{community.path}}"><img src="http://roughlinen.imgix.net/contrib/{{ community.path | split: '/' | last | replace: '.html' }}/{{ community.image_00 }}?w=156&amp;h=190&amp;fit=crop&amp;crop=entropy&amp;ch=Width,DPR" alt="" /><p>{{ community.contributor | capitalize }}</p></a>
+    {% endfor %}
+
+<!--
         <a class="community-tile" href="contrib/mary_jo/mary_jo.html"><img src="http://roughlinen.imgix.net/contrib/mary_jo/mary-jo-1-190-new.jpg?w=156&amp;h=190&amp;fit=crop&amp;crop=entropy&amp;ch=Width,DPR" alt="" />
             <p>mary jo</p>
         </a>
@@ -197,6 +203,6 @@ text-decoration: none;
         <a class="community-tile" href="contrib/betsy/betsy.html"><img src="http://roughlinen.imgix.net/contrib/betsy/20160126_182942.jpg?w=156&amp;h=190&amp;fit=crop&amp;crop=entropy&amp;ch=Width,DPR" alt="" />
             <p>betsy</p>
         </a>
-    </div>
+ -->    </div>
 </div>
 <!-- end main -->
