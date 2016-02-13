@@ -4,18 +4,21 @@
 </head>
 
 <body>
-    {% include header.html %}
+    {% include header-no-logo.html %}
     <div class="page-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-md-push-5">
+                 <div class="col-md-5">
+                    <a href="/index.html"><img class="logo" src="/images/rough-linen-logo.gif" title="Rough Linen™ real, natural linen, the way it used to be" alt="Rough Linen™ real, natural linen, the way it used to be"></a>
+                </div>
+                <div class="col-md-7">
                     {% if page.next %}
-                        <span><a href="{{page.next.url}}"><img src="/images/arrow-for-community-left.jpg" alt="Next Contributor" height="42" width="42" border="0" /></a></span>
+                        <div class="pull-left"><a href="{{page.next.url}}"><img src="/images/arrow-for-community-left.jpg" alt="Next Contributor" height="42" width="42" border="0" /></a></div>
                     {% endif %}
-                        <span style="margin-left: 33%" class="center"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">{{ page.contributor }}</font></span>
                     {% if page.previous %}
-                        <span class="pull-right"><a href="{{page.previous.url}}"><img src="/images/arrow-for-community-right.jpg" alt="Previous Contributor" height="42" width="42" border="0" /></a></span>
+                        <div class="pull-right"><a href="{{page.previous.url}}"><img src="/images/arrow-for-community-right.jpg" alt="Previous Contributor" height="42" width="42" border="0" /></a></div>
                     {% endif %}
+                    <div class="center"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">{{ page.contributor }}</font></div>
                 </div>
             </div>
             <div class="row">
