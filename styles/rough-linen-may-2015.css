@@ -402,18 +402,14 @@ p a:active {
     font-size: 20px;
     font-weight: 300;
 }
-// .navMenu ul {
-//     line-height: 45px;
-//     margin: 0;
-//     padding: 0;
-//     z-index: 1000;
-// }
-// .navMenu li {
-//     background-color: #F0F9FB;
-//     float: left;
-//     list-style: none;
-//     position: relative;
-// }
+.navMenu ul {
+    background-color: #F0F9FB;
+}
+.navMenu li {
+    background-color: #F0F9FB;
+    font-size: 20px;
+    font-weight: 300;
+}
 // .navMenu li:hover {
 //     background-color: #F0F9FB;
 // }
