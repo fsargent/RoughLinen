@@ -10,6 +10,7 @@ github_username:  fsargent
 collections:
   contrib:
     output: true
+permalink: /contrib/:title/:title.html
 
 # Build settings
 markdown: kramdown

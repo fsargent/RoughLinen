@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Rough Linen Quilt
+title: Quilt
 ---
 
 <style>
-#sold h2 {
+.sold h2 {
     position:absolute;
     left:150px;
     bottom:75px;
@@ -21,9 +21,9 @@ title: Rough Linen Quilt
 }
 </style>
 <div class="row">
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yRm44E3Hc5Q" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+    <a class="highslide" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 900, height: 600, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" href="https://www.youtube.com/embed/yRm44E3Hc5Q?rel=0&amp;wmode=transparent&amp;autoplay=1" title="Rough Linen Custom Quilts">
+                <img class="img-responsive" src="images/quilt-start-video-1200.jpg" alt="Tricia talks about the origins of Rough Linen" title="Tricia talks about the origins of Rough Linen" />
+            </a>
 </div>
 <div class="row">
     <div class="col-md-6">
@@ -33,7 +33,7 @@ title: Rough Linen Quilt
     <div class="col-md-6">
         <div class="row">
             <h1>Quilt</h1>
-            <h3 class="text-right">indigo quilt  80” x 98” $1090</h3>
+            <h3 class="text-right"><s>indigo quilt  80” x 98” $1090</s></h3>
             <h3 class="text-right"><s>charcoal throw 56” x 72” $616</s></h3>
             <h3 class="text-right">custom quilt &ndash; contact Tricia</h3>
             <div id="buy_button" class="pull-right"><a href="https://store.roughlinen.com/quilt-p98.aspx" title="add to basket">add to basket</a></div>
@@ -48,13 +48,14 @@ title: Rough Linen Quilt
     <div class="row">
             <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/quilt/quilt_white.jpg" title="Indigo White and Natural Quilt">
                 <img src="/images/quilt/quilt_white.jpg" alt="" class="img-responsive">
+                <span class="sold" style="position: relative;"><h2><b>SOLD!</b></h2></span>
             </a>
         <p>This is a large quilt with three colours, Indigo, White and Natural. The tufting holding it together is indigo thread, the lining is natural smooth linen and the fill is cotton. There is a tag with my initials as maker.</p>
     </div>
     <div class="row">
         <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/quilt/smaller_quilt_white_bg_1000_web.jpg" title="Black &amp; White Quilt">
             <img src="/images/quilt/smaller_quilt_white_bg_1000_web.jpg" alt="" class="img-responsive">
-            <span id="sold" style="position: relative;"><h2><b>SOLD!</b></h2></span>
+            <span class="sold" style="position: relative;"><h2><b>SOLD!</b></h2></span>
         </a>
         <p>This throw contains Charcoal, Black, White, Natural, and a flash of red. The tufting is also red, on a pieced natural linen lining with cotton fill. There is a tag with my initials as maker.</p>
     </div>

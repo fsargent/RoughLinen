@@ -11,25 +11,6 @@ layout: default
     border: none;
 }
 
-#glass-house-video {
-    float: left;
-    margin: 5px;
-    width: 640px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.glass-house-copy {
-    width: 300px;
-    float: right;
-    font-size: 14px;
-    margin-right: 35px;
-}
-
-iframe {
-    border: none;
-}
-
 .RWD320 {
     float: left;
     height: 245px;
@@ -41,12 +22,16 @@ iframe {
 
 <div id="main">
     <h1>videos</h1>
-    <div id="glass-house-video">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/tFPaWWK_x30?rel=0" frameborder="0" allowfullscreen></iframe>
-        <p>My Rough Linen sheets, duvet cover and pillow slips in the Glass House</p>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tFPaWWK_x30?rel=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+        <p>A request from the folk who run Philip Johnson's Glass House, "could they use my bed linen?" In the Glass House? <em>THE</em> Glass House? Oh, yes! I told my good friends at Remodelista, who in turn contacted the Glass House for permission to do a photo shoot. One day in June, 2014, Margot Guralnick and I arrived on site with Matthew Williams, a professional stills photographer. I took my video camera and shot away myself. Margot's Remodelista article is <a href="http://www.remodelista.com/posts/lessons-in-minimalism-from-the-glass-house-by-philip-johnson-new-canaan-connecticut">here</a>.</p>
+        </div>
     </div>
-    <p class="glass-house-copy">
-        <br>A request from the folk who run Philip Johnson's Glass House, "could they use my bed linen?" In the Glass House? <em>THE</em> Glass House? Oh, yes! I told my good friends at Remodelista, who in turn contacted the Glass House for permission to do a photo shoot. One day in June, 2014, Margot Guralnick and I arrived on site with Matthew Williams, a professional stills photographer. I took my video camera and shot away myself. Margot's Remodelista article is <a href="http://www.remodelista.com/posts/lessons-in-minimalism-from-the-glass-house-by-philip-johnson-new-canaan-connecticut">here</a>.</p>
     <div class="clearBoth" id="videosTable">
         <div class="RWD320">
             <a class="highslide" onclick="return hs.htmlExpand(this, {objectType: 'iframe', width: 710, height: 460, allowSizeReduction: false, wrapperClassName: 'draggable-header no-footer', preserveContent: false, objectLoadTime: 'after'})" href="https://www.youtube.com/embed/rXpVABq5qfI?rel=0&amp;wmode=transparent&amp;autoplay=1" title=""><img src="images/rough-linen-story-402-video-rev.jpg" alt="" />
