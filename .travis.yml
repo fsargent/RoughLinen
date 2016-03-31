@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.1
 script:
+  - ruby -S bundle install
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html --empty-alt-ignore --allow-hash-href --file-ignore ./_site/contrib/donna/donna.html
 env:
