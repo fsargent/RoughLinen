@@ -18,3 +18,5 @@ include: [.htaccess]
 detatch: true
 gems:
   - jekyll-sitemap
+  - html-proofer
+  - jekyll-redirect-from
