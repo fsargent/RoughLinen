@@ -1,9 +1,9 @@
 # Site settings
 title: Rough Linen
 email: felix@roughlinen.com
-description: > # Rough Linen - real, natural linen, the way it used to be
+description: Rough Linen - real, natural linen, the way it used to be
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://roughlinen.com" # the base hostname & protocol for your site
+url: "https://pages.roughlinen.com" # the base hostname & protocol for your site
 twitter_username: roughlinen
 github_username:  fsargent
 
@@ -18,5 +18,7 @@ include: [.htaccess]
 detatch: true
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
   - html-proofer
+whitelist:
   - jekyll-redirect-from
