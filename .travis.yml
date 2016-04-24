@@ -5,7 +5,7 @@ script:
   - gem install html-proofer
   - ruby -S bundle install
   - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html --empty-alt-ignore --allow-hash-href --file-ignore ./_site/contrib/donna/donna.html
+  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --empty-alt-ignore --allow-hash-href --file-ignore ./_site/contrib/donna/donna.html
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
