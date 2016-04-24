@@ -43,18 +43,26 @@
                         </div>
                     </div>
                     <div class="row">
+                        {% if page.image_05 != null %}
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="/images/contrib/{{ page.slug }}/{{page.image_05 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_05 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 5" border="0" /></a>
+                            <a href="/images/contrib/{{ page.slug }}/{{page.image_05 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_05 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 5" border="0" /></a>
                         </div>
+                        {% endif %}
+                        {% if page.image_06 != null %}
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="/images/contrib/{{ page.slug }}/{{page.image_06 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_06 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 6" border="0" /></a>
+                            <a href="/images/contrib/{{ page.slug }}/{{page.image_06 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_06 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 6" border="0" /></a>
                         </div>
+                        {% endif %}
+                        {% if page.image_07 != null %}
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="/images/contrib/{{ page.slug }}/{{page.image_07 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_07 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 7" border="0" /></a>
+                            <a href="/images/contrib/{{ page.slug }}/{{page.image_07 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_07 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 7" border="0" /></a>
                         </div>
+                        {% endif %}
+                        {% if page.image_08 != null %}
                         <div class="col-xs-6 col-sm-3 col-md-3">
-                            <a href="/images/contrib/{{ page.slug }}/{{page.image_08 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img onError="this.style.display = 'none';" src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_08 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 8" border="0" /></a>
+                            <a href="/images/contrib/{{ page.slug }}/{{page.image_08 }}" class="highslide" onclick="return hs.expand(this, config1 )"><img src="//roughlinen.imgix.net/images/contrib/{{ page.slug }}/{{ page.image_08 }}?w=141&amp;h=193&amp;fit=crop&amp;ch=Width,DPR" alt="Image 8" border="0" /></a>
                         </div>
+                        {% endif %}
                     </div>
                     <div>
                         {{ page.content }}
