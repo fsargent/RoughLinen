@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-md-6">
+        <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/{{ page.main_image }}" title="{{ page.main_image_title }}"><img class="img-responsive" src="images/{{ page.main_image }}" title="{{ page.main_image_title }}" alt="{{ page.main_image_title }}"></a>
+    </div>
+    <div class="col-md-6" id="description">
+        <h1>{{ page.title }}</h1>
+        <h2 class="alignRight">{{ page.colors }}</h2>
+        <h3 class="alignRight">{{ page.dimensions }}</h3>
+        <div class="alignRight fine_print"></div>
+        <div class="pull-right">
+            {% if page.nexternal != null %}
+                <div id="buy_button" class="floatright"><a href="{{ page.nexternal }}" title="add to basket">add to basket</a></div>
+            {% endif %}
+            {% if page.shopify != null %}
+                <div data-embed_type="product" data-shop="rough-linen.myshopify.com" data-product_name="{{ page.title }}" data-product_handle="{{ page.title | lowercase }}" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to Basket" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ab967d" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                <noscript><a href="https://rough-linen.myshopify.com/cart/{{ page.shopify }}:1" target="_blank">Buy {{ page.title }}</a></noscript>
+            {% endif %}
+        </div>
+        <p class="clearBoth">{{ content }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+    {% for image in page.left_images %}
+        <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/{{ image.path }}" title="{{image.title}}"><img class="img-responsive" src="images/{{ image.path }}" title="{{image.title}}" alt="{{image.title}}"></a>
+        <p>{{ image.description }}</p>
+    {% endfor %}
+    </div>
+    <div class="col-md-6">
+    {% for image in page.right_images %}
+        <a class="highslide" onclick="return hs.expand(this, config1 )" href="images/{{ image.path }}" title="{{image.title}}"><img class="img-responsive" src="images/{{ image.path }}" title="{{image.title}}" alt="{{image.title}}"></a>
+        <p>{{ image.description }}</p>
+    {% endfor %}
+    </div>
+</div>
