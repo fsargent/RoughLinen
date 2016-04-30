@@ -15,7 +15,7 @@ layout: default
                 <div id="buy_button" class="floatright"><a href="{{ page.nexternal }}" title="add to basket">add to basket</a></div>
             {% endif %}
             {% if page.shopify != null %}
-                <div data-embed_type="product" data-shop="rough-linen.myshopify.com" data-product_name="{{ page.title }}" data-product_handle="{{ page.title | lowercase }}" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to Basket" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ab967d" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                <div style="text-align;right" data-embed_type="product" data-shop="rough-linen.myshopify.com" data-product_name="{{ page.title }}" data-product_handle="{{ page.title | lowercase }}" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to Basket" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ab967d" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
                 <noscript><a href="https://rough-linen.myshopify.com/cart/{{ page.shopify }}:1" target="_blank">Buy {{ page.title }}</a></noscript>
             {% endif %}
         </div>
